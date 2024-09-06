@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Goal Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="scoreboard">
+        <div class="team left">
+            <div class="score-box blue-gradient">
+                <span class="score" id="scoreLeft">0</span>
+            </div>
+            <p class="team-name">تیمی شین</p>
+        </div>
+        <div class="team right">
+            <div class="score-box yellow-gradient">
+                <span class="score" id="scoreRight">0</span>
+            </div>
+            <p class="team-name">تیمی زەرد</p>
+        </div>
+    </div>
+    <div class="goalDetails">
+        <div class="goal left">
+            <ul id="leftScorers" class="scorer-list"></ul>
+        </div>
+        <div class="goal right">
+            <ul id="rightScorers" class="scorer-list"></ul>
+        </div>
+    </div>
+    <div class="controls">
+        <div class="control left">
+            <button id="addLeftGoal" onclick="showPopup('left')">+ Add Goal</button>
+        </div>
+        <div class="control right">
+            <button id="addRightGoal" onclick="showPopup('right')">+ Add Goal</button>
+        </div>
+    </div>
+</div>
+
+<div id="popup" class="popup">
+    <div dir="rtl" class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>گۆۆۆۆۆڵ</h2>
+        <label for="scorerName">ناوی گۆڵکار</label>
+        <input type="text" id="scorerName" placeholder="ناو....">
+        <label for="goalTime">خولەکی گۆڵکردن</label>
+        <input type="text" id="goalTime" placeholder="کات....">
+        <button class="save-btn" onclick="saveGoal()">Save</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px; /* Increased padding */
+    width: 700px; /* Increased width */
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px; /* Increased padding */
+    border-bottom: 2px solid #ddd;
+}
+
+.team {
+    width: 45%;
+    text-align: center;
+}
+
+.score-box {
+    border-radius: 20px; /* Slightly larger rounding */
+    padding: 35px; /* Increased padding for larger boxes */
+    margin-bottom: 20px; /* Increased margin */
+    color: white;
+}
+
+.blue-gradient {
+    background: linear-gradient(135deg, #007bff, #fff);
+}
+
+.yellow-gradient {
+    background: linear-gradient(135deg, #ff0, #fff);
+}
+
+.score {
+    font-size: 75px; /* Increased font size */
+    font-weight: bold;
+    color: #343a40;
+}
+
+.team-name {
+    font-size: 28px; /* Increased font size */
+    color: #6c757d;
+    margin-top: 20px; /* Increased margin */
+}
+
+.goalDetails {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0; /* Increased padding */
+    border-bottom: 2px solid #ddd;
+}
+
+.scorer-list {
+    list-style-type: none;
+    text-align: center;
+    color: #495057;
+    font-size: 24px; /* Increased font size */
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px; /* Increased padding */
+}
+
+.control button {
+    padding: 15px 25px; /* Increased padding */
+    font-size: 24px; /* Increased font size */
+    border: none;
+    border-radius: 12px; /* Slightly larger rounding */
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control button:hover {
+    background-color: #0056b3;
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dimmed background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 40px; /* Increased padding for more spacing */
+    border-radius: 20px; /* Rounded corners for a card-like feel */
+    text-align: center;
+    width: 400px; /* Card width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for card effect */
+    position: relative;
+}
+
+.popup-content h2 {
+    font-size: 28px; /* Larger title */
+    margin-bottom: 20px; /* More space below the title */
+}
+
+.popup-content label {
+    font-size: 18px; /* Larger label size */
+    margin-top: 15px;
+    display: block;
+    text-align: center; /* Align labels to the left */
+}
+
+.popup-content input {
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.save-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #218838;
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 32px; /* Larger close button */
+    cursor: pointer;
+    color: #333;
+}
+
+.close:hover {
+    color: #000;
+}
