@@ -168,7 +168,7 @@ body {
 .close:hover {
     color: #000;
 }
-#credits h5 {
+#credits {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -178,7 +178,9 @@ body {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     color: #6c757d;
-    margin: 0;
     align: bottom;
+}
+#credits h5 {
+    margin: 0;
 }
 
