@@ -10,17 +10,17 @@ function showPopup(side) {
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
     document.getElementById('scorerName').value = '';
-    document.getElementById('goalTime').value = '';
 }
 
 function saveGoal() {
     const scorerName = document.getElementById('scorerName').value;
-    const goalTime = document.getElementById('goalTime').value;
-
-    if (!scorerName || !goalTime) {
+    if (!scorerName) {
         alert('ناوی گۆڵکار تۆماربکە');
         return;
     }
+
+    const now = new Date();
+    const goalTime = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
 
     const goalDetails = `${scorerName} (${goalTime})`;
 
