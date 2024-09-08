@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>یاری</title>
+    <title>Soccer Goal Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <div id="credits">
-        <h5>
-            By Abas Irwani & his associate ChatGPT
-        </h5>
+    <div id="credits">
+    <h6>
+        Abas Irwani in partnership with ChatGPT
+    </h6>
 </div>
 <div class="container">
     <div class="scoreboard">
@@ -18,13 +19,13 @@
             <div class="score-box blue-gradient">
                 <span class="score" id="scoreLeft">0</span>
             </div>
-            <p class="team-name">تیمی چیا</p>
+            <p class="team-name">تیمی شین</p>
         </div>
         <div class="team right">
             <div class="score-box yellow-gradient">
                 <span class="score" id="scoreRight">0</span>
             </div>
-            <p class="team-name">تیمی هەڵۆ</p>
+            <p class="team-name">تیمی زەرد</p>
         </div>
     </div>
     <div class="goalDetails">
@@ -37,13 +38,12 @@
     </div>
     <div class="controls">
         <div class="control left">
-            <button id="addLeftGoal" onclick="showPopup('left')">+ گۆڵ</button>
+            <button id="addLeftGoal" onclick="showPopup('left')">+ Add Goal</button>
         </div>
         <div class="control right">
-            <button id="addRightGoal" onclick="showPopup('right')">+ گۆڵ</button>
+            <button id="addRightGoal" onclick="showPopup('right')">+ Add Goal</button>
         </div>
     </div>
-   
 </div>
 
 <div id="popup" class="popup">
