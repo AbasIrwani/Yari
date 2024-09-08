@@ -17,14 +17,14 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 50px; /* Increased padding */
-    width: 700px; /* Increased width */
+    padding: 50px;
+    width: 700px;
 }
 
 .scoreboard {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px; /* Increased padding */
+    padding-bottom: 30px;
     border-bottom: 2px solid #ddd;
 }
 
@@ -34,9 +34,9 @@ body {
 }
 
 .score-box {
-    border-radius: 20px; /* Slightly larger rounding */
-    padding: 35px; /* Increased padding for larger boxes */
-    margin-bottom: 20px; /* Increased margin */
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 20px;
     color: white;
 }
 
@@ -49,21 +49,21 @@ body {
 }
 
 .score {
-    font-size: 75px; /* Increased font size */
+    font-size: 75px;
     font-weight: bold;
     color: #343a40;
 }
 
 .team-name {
-    font-size: 28px; /* Increased font size */
+    font-size: 28px;
     color: #6c757d;
-    margin-top: 20px; /* Increased margin */
+    margin-top: 20px;
 }
 
 .goalDetails {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0; /* Increased padding */
+    padding: 30px 0;
     border-bottom: 2px solid #ddd;
 }
 
@@ -71,20 +71,20 @@ body {
     list-style-type: none;
     text-align: center;
     color: #495057;
-    font-size: 24px; /* Increased font size */
+    font-size: 24px;
 }
 
 .controls {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px; /* Increased padding */
+    padding-top: 30px;
 }
 
 .control button {
-    padding: 15px 25px; /* Increased padding */
-    font-size: 24px; /* Increased font size */
+    padding: 15px 25px;
+    font-size: 24px;
     border: none;
-    border-radius: 12px; /* Slightly larger rounding */
+    border-radius: 12px;
     background-color: #007bff;
     color: white;
     cursor: pointer;
@@ -103,7 +103,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Dimmed background */
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -111,24 +111,23 @@ body {
 
 .popup-content {
     background-color: white;
-    padding: 40px; /* Increased padding for more spacing */
-    border-radius: 20px; /* Rounded corners for a card-like feel */
+    padding: 40px;
+    border-radius: 20px;
     text-align: center;
-    width: 400px; /* Card width */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for card effect */
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
 .popup-content h2 {
-    font-size: 28px; /* Larger title */
-    margin-bottom: 20px; /* More space below the title */
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .popup-content label {
-    font-size: 18px; /* Larger label size */
+    font-size: 18px;
     margin-top: 15px;
     display: block;
-    text-align: center; /* Align labels to the left */
 }
 
 .popup-content input {
@@ -161,11 +160,26 @@ body {
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 32px; /* Larger close button */
+    font-size: 32px;
     cursor: pointer;
     color: #333;
 }
 
 .close:hover {
     color: #000;
+}
+#credits {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #6c757d;
+}
+
+#credits h5 {
+    margin: 0;
 }
