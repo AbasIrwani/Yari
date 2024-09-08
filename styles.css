@@ -174,10 +174,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    text-align: center;
+    text-align: top;
     background-color: #f8f9fa;
     padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     color: #6c757d;
 }
