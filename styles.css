@@ -10,19 +10,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://i.pinimg.com/originals/3e/4a/ef/3e4aef224f8d0b7cd97b4b8a2ced44d8.jpg') no-repeat center center fixed;
+    background: url('https://cdn.wallpapersafari.com/59/61/wScxR0.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(189, 189, 189, 0.6);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 50px;
     width: 700px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     position: relative;
 }
 
@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #fff;
 }
 
 .team {
@@ -46,11 +46,13 @@ body {
 }
 
 .blue-gradient {
-    background: linear-gradient(135deg, #007bff, #fff);
+    background: linear-gradient(145deg, #Fff, #007bff);
+    z-index: 0;
+    background-repeat: repeat-x
 }
 
 .yellow-gradient {
-    background: linear-gradient(135deg, #ff0, #fff);
+    background: linear-gradient(145deg, #ffF, #ff0);
 }
 
 .score {
@@ -62,7 +64,8 @@ body {
 
 .team-name {
     font-size: 28px;
-    color: #6c757d;
+    font-weight: 600;
+    color: #fff;
     margin-top: 20px;
 }
 
@@ -70,13 +73,13 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #FFF;
 }
 
 .scorer-list {
     list-style-type: none;
     text-align: center;
-    color: #495057;
+    color: #fff;
     font-size: 24px;
 }
 
