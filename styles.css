@@ -10,15 +10,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e9ecef;
+    background: url('https://i.pinimg.com/originals/63/35/7e/63357e2b14646b3cf13ef444f17acfb5.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 50px;
     width: 700px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
 }
 
 .scoreboard {
@@ -52,6 +57,7 @@ body {
     font-size: 75px;
     font-weight: bold;
     color: #343a40;
+    font-family: 'Bebas Neue', sans-serif; /* FIFA-like font */
 }
 
 .team-name {
@@ -169,7 +175,7 @@ body {
     color: #000;
 }
 
-
+/* Credits styling */
 #credits {
     position: fixed;
     top: 0;
@@ -177,6 +183,7 @@ body {
     text-align: center;
     background-color: #f8f9fa;
     padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     color: #6c757d;
 }
